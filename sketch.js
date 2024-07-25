@@ -14,10 +14,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1200, 600)
+  createCanvas(windowWidth, windowHeight)
   colorMode(RGB);
   background(255);
-  frameRate(100);
+  // frameRate(100);
   textFont(font);
   
   
@@ -33,8 +33,8 @@ function setup() {
 }
 
 function draw() {
-  let x = random(width);
-  let y = random(height);
+  let x = random(windowWidth);
+  let y = random(windowHeight);
   let myText, colorIndex;
 
   let randomGroup = int(random(6)); // בחר קבוצה רנדומלית בין 0 ל-5
